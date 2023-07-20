@@ -21,12 +21,15 @@ const passengerName = document.getElementById('info-passenger')
 sendButton.addEventListener('click', function() {
     
     const userName = inputUserName.value;
+
+    const userKm = parseFloat(inputUserKm.value);
     
-    const userKm = inputUserKm.value;
-    
-    const userAge = inputUserAge.value;
-    
-    /* - Calcolo costo del biglietto in base ai chilometri inseriti precedentemente dall'utente*/
+    const userAge = parseInt(inputUserAge.value);
+
+    if(isNaN (userKm)) {
+        alert("I km devono essere numeri");
+    } else {
+        /* - Calcolo costo del biglietto in base ai chilometri inseriti precedentemente dall'utente*/
     let ticketPrice = userKm * 0.21;
 
     if ((userAge > 0) && (userKm > 0)) {
@@ -37,7 +40,7 @@ sendButton.addEventListener('click', function() {
             ticketPrice = ticketPrice * 0.8;
     
         /* ALTRIMENTI SE l'utente risulta essere over 65 vado ad applicare un sconto del 40% al prezzo del biglietto*/
-        } else if (userAge >= 65) {
+        } else if (userAge > 65) {
             ticketPrice = ticketPrice * 0.6;
         }
     
@@ -45,7 +48,7 @@ sendButton.addEventListener('click', function() {
         ticketPrice = ticketPrice.toFixed(2);
         
         ticketTrain.innerHTML = 'Il prezzo del biglietto è: ' + ticketPrice + '€'
-        passengerName.innerHTML = 'Dati Passeggero: ' + userName
+        passengerName.innerHTML = userName
         
         inputUserName.value = '';
         inputUserKm.value = '';
@@ -53,7 +56,9 @@ sendButton.addEventListener('click', function() {
     }
     else{
         alert("Età e km devono essere maggiori di 0");
-    }   
+    }  
+
+    }
 
 });
 

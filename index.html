@@ -9,21 +9,48 @@
     <script src="./js/script.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <div class="container mt-5">
-        <label class="form-label" for="user-name">Inserisci Nome e Cognome</label>
-        <input class="form-control w-25" type="text" name="user-name" id="user-name">
+    <div class="container mt-5 text-center">
+        <h2 class="text-light text-uppercase fw-bold">Calcola il prezzo del tuo biglietto</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card mb-5">
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <div class="w-25 mt-3">
+                            <label class="form-label label_custom" for="user-name">Inserisci Nome e Cognome</label>
+                            <input class="form-control" type="text" name="user-name" id="user-name">
+                        </div>
+                
+                        <div class="w-25 mt-3">
+                            <label class="form-label label_custom" for="user-km">Inserisci i km da percorrere</label>
+                            <input class="form-control" type="text" name="user-km" id="user-km">
+                        </div>
 
-        <label class="form-label" for="user-km">Inserisci i km da percorrere</label>
-        <input class="form-control w-25" type="text" name="user-km" id="user-km">
-
-        <label class="form-label" for="user-age">Inserisci la tua età</label>
-        <input class="form-control w-25" type="number" name="user-age" id="user-age">
-
-        <button id="send-text" class="btn btn-primary mt-2">Invia Dati</button>
-
-        <div>
-            <p id="info-passenger"></p>
-            <p id="ticket-train"></p>
+                        <div class="w-25 mb-4 mt-3">
+                            <label class="form-label label_custom" for="user-age">Inserisci la tua età</label>
+                            <input class="form-control" type="number" name="user-age" id="user-age">
+                        </div>
+                
+                    </div>
+                    <div class="text-center">
+                        <button id="send-text" class="btn btn-primary mt-2 text-uppercase btn_custom">Genera</button>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <h2 class="text-light text-uppercase fw-bold">Il tuo biglietto</h2>
+                    <div class="card">
+                        <div class="card-body d-flex .justify-content-between">
+                            <div>
+                                <h3 class="text-uppercase fw-bold">Dettaglio Passeggeri</h3>
+                                <div class="bg-color-secondary">
+                                    <p class="fw-bold fs-5" id="info-passenger"></p>
+                                    <p id="ticket-train"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
