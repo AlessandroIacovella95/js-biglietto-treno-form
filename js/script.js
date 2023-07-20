@@ -10,6 +10,9 @@ const inputUserAge = document.getElementById('user-age')
 // Prendo il bottone dal DOM
 const sendButton = document.getElementById('send-text')
 
+// Prendo il bottone dal DOM
+const cancelButton = document.getElementById('cancel-text')
+
 // Prendo il paragrafo dal DOM
 const ticketTrain = document.getElementById('ticket-train')
 
@@ -50,17 +53,19 @@ sendButton.addEventListener('click', function() {
         ticketTrain.innerHTML = ticketPrice + '€'
         passengerName.innerHTML = 'Nome Passeggero: ' + '<br>' + userName
         
-        inputUserName.value = '';
-        inputUserKm.value = '';
-        inputUserAge.value = '';
     }
     else{
         alert("Età e km devono essere maggiori di 0");
-    }  
-
-    }
+    }     
+}
 
 });
 
-                
+cancelButton.addEventListener('click', function(){
+    inputUserName.value = '';
+    inputUserKm.value = '';
+    inputUserAge.value = '';
+
+})
+
   
