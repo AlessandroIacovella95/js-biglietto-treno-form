@@ -29,3 +29,14 @@ h3{
     font-size: 1.2rem;
     white-space: nowrap;
 }
+
+.bg-color-ticket{
+    background-color: grey;
+    height: 110px;
+    width: 300px;
+}
+
+.border_container{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

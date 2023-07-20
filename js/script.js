@@ -47,8 +47,8 @@ sendButton.addEventListener('click', function() {
         /* - Restituisco l'output al cliente con massimo due decimali, per indicare i centesimi sul prezzo del biglietto.*/
         ticketPrice = ticketPrice.toFixed(2);
         
-        ticketTrain.innerHTML = 'Il prezzo del biglietto è: ' + ticketPrice + '€'
-        passengerName.innerHTML = userName
+        ticketTrain.innerHTML = ticketPrice + '€'
+        passengerName.innerHTML = 'Nome Passeggero: ' + '<br>' + userName
         
         inputUserName.value = '';
         inputUserKm.value = '';
