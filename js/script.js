@@ -66,6 +66,9 @@ cancelButton.addEventListener('click', function(){
     inputUserKm.value = '';
     inputUserAge.value = '';
 
+    ticketTrain.innerHTML = '';
+    passengerName.innerHTML = '';
+
 })
 
   

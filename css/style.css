@@ -1,14 +1,17 @@
+/* BODY */
 body{
     background-color: #B91450;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* CUSTOM-LABEL */
 .label_custom{
     font-size: 1rem;
     font-weight: bold;
     color: #B91450;
 }
 
+/* BUTTON */
 .btn_custom{
     width: 100px;
     font-size: .9rem;
@@ -20,8 +23,9 @@ body{
     white-space: nowrap;
 }
 
+/* BUTTON HOVER */
 .btn:hover {
-    color: #CCCCCC ;
+    color:white ;
     background-color:#B91450; ;
     border-color:#B91450;;
 }
@@ -31,12 +35,14 @@ h3{
     white-space: nowrap;
 }
 
+/* BACKGROUND COLOR */
 .bg-color-ticket{
     background-color: grey;
     height: 110px;
     width: 300px;
 }
 
+/* BORDER */
 .border_container{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
