@@ -24,5 +24,5 @@ Se non vi sentite particolarmente creativi, questa potrebbe essere un'implementa
 - Chiedi all'utente il numero di km da percorrere
 - Chiedi all'utente la sua età
 - Calcola il prezzo base del biglietto in base ai km inseriti dall'utente
-- Applica uno sconto del 20% **SE** per i minorenni, **ALTRIMENTI SE** Over 65 applica uno sconto del 40%
+- Applica uno sconto del 20% **SE** minorenni, **ALTRIMENTI SE** Over 65 applica uno sconto del 40%
 - Stampa in pagina il prezzo del biglietto
