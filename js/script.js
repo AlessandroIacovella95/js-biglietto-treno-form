@@ -29,6 +29,10 @@ sendButton.addEventListener('click', function() {
     
     const userAge = parseInt(inputUserAge.value);
 
+    if (userName == '') {
+        alert("Il nome è obbligatorio")
+    } else {
+
     if(isNaN (userKm)) {
         alert("I km devono essere numeri");
     } else {
@@ -57,7 +61,8 @@ sendButton.addEventListener('click', function() {
     else{
         alert("Età e km devono essere maggiori di 0");
     }     
-}
+    }
+    }
 
 });
 
