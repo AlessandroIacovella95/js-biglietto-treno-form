@@ -47,3 +47,9 @@ h3{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
+.alert-success {
+    color: white;
+    background-color: green;
+    border-color: green;
+}

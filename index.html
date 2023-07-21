@@ -18,6 +18,7 @@
     <div class="container mt-5 text-center">
         <!-- TITOLO -->
         <h2 class="text-light text-uppercase fw-bold">Calcola il prezzo del tuo biglietto</h2>
+        <div class="alert alert-danger text-start d-none" id="alert_danger" role="alert"></div>
         <div class="row">
             <div class="col">
                 <!-- CARD -->
@@ -49,9 +50,10 @@
                     </div>
                 </div>
         
-                <div class="col">
+                <div id="ticket-section" class="col d-none">
                     <!-- TITOLO -->
                     <h2 class="text-light text-uppercase fw-bold">Il tuo biglietto</h2>
+                    <div class="alert alert-success text-start" role="alert">Il biglietto è stato generato correttamente</div>
                     <!-- CARD -->
                     <div class="card">
                         
@@ -68,16 +70,16 @@
                             <div class="d-flex flex-grow-1 justify-content-around border_container py-2">
                                 <div>
                                     <p class="fw-bold">Offerta</p>
-                                    <span>Biglietto Standard</span>
+                                    <span id="standard-ticket"></span>
                                 </div>
                                 <div>
                                     <p class="fw-bold">Carrozza</p>
-                                    <span> 5 </span>
+                                    <span id="train-carriage-number"></span>
                                 </div>
                                     
                                 <div>
                                     <p class="fw-bold">Codice CP</p>
-                                    <span>92911</span>
+                                    <span id="cp-code"></span>
                                 </div>
                                     
                                 <div>
